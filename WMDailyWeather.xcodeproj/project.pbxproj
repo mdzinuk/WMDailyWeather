@@ -1,0 +1,806 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		411D2D298820BA8D559BF19C /* Pods_WMDailyWeather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC06F1B2E5B15766AA046EA3 /* Pods_WMDailyWeather.framework */; };
+		866DEF0D1DB6562B00191663 /* WMDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 866DEF0C1DB6562B00191663 /* WMDetailViewController.m */; };
+		866DEF0E1DB6562B00191663 /* WMDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 866DEF0C1DB6562B00191663 /* WMDetailViewController.m */; };
+		866DEF0F1DB6562B00191663 /* WMDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 866DEF0C1DB6562B00191663 /* WMDetailViewController.m */; };
+		8692A80D1D99AC52002BC5C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8692A80C1D99AC52002BC5C6 /* main.m */; };
+		8692A8101D99AC52002BC5C6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8692A80F1D99AC52002BC5C6 /* AppDelegate.m */; };
+		8692A8161D99AC52002BC5C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8692A8141D99AC52002BC5C6 /* Main.storyboard */; };
+		8692A8181D99AC52002BC5C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8692A8171D99AC52002BC5C6 /* Assets.xcassets */; };
+		8692A81B1D99AC52002BC5C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8692A8191D99AC52002BC5C6 /* LaunchScreen.storyboard */; };
+		8692A8261D99AC52002BC5C6 /* WMDailyWeatherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8692A8251D99AC52002BC5C6 /* WMDailyWeatherTests.m */; };
+		8692A8311D99AC52002BC5C6 /* WMDailyWeatherUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8692A8301D99AC52002BC5C6 /* WMDailyWeatherUITests.m */; };
+		8692A8451D99AD13002BC5C6 /* WMTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8692A8441D99AD13002BC5C6 /* WMTableViewController.m */; };
+		8692A8461D99AD13002BC5C6 /* WMTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8692A8441D99AD13002BC5C6 /* WMTableViewController.m */; };
+		8692A8491D99AEB1002BC5C6 /* WMModelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8692A8481D99AEB1002BC5C6 /* WMModelView.m */; };
+		8692A84A1D99AEB1002BC5C6 /* WMModelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8692A8481D99AEB1002BC5C6 /* WMModelView.m */; };
+		8692A84D1D99AF0C002BC5C6 /* WMDailyModelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8692A84C1D99AF0C002BC5C6 /* WMDailyModelView.m */; };
+		8692A84E1D99AF0C002BC5C6 /* WMDailyModelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8692A84C1D99AF0C002BC5C6 /* WMDailyModelView.m */; };
+		8692A8511D99AF7E002BC5C6 /* WMLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8692A8501D99AF7E002BC5C6 /* WMLocationManager.m */; };
+		8692A8521D99AF7E002BC5C6 /* WMLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8692A8501D99AF7E002BC5C6 /* WMLocationManager.m */; };
+		8692A8561D99B0FD002BC5C6 /* WMLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8692A8551D99B0FD002BC5C6 /* WMLocation.m */; };
+		8692A8571D99B0FD002BC5C6 /* WMLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8692A8551D99B0FD002BC5C6 /* WMLocation.m */; };
+		8692A85A1D99B2D4002BC5C6 /* WMDailyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8692A8591D99B2D4002BC5C6 /* WMDailyModel.m */; };
+		8692A85B1D99B2D4002BC5C6 /* WMDailyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8692A8591D99B2D4002BC5C6 /* WMDailyModel.m */; };
+		8692A85E1D99B365002BC5C6 /* WMTableConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 8692A85D1D99B365002BC5C6 /* WMTableConfiguration.m */; };
+		8692A85F1D99B365002BC5C6 /* WMTableConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 8692A85D1D99B365002BC5C6 /* WMTableConfiguration.m */; };
+		8692A8651D99BFAB002BC5C6 /* WMDataProviderClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 8692A8641D99BFAB002BC5C6 /* WMDataProviderClient.m */; };
+		8692A8661D99BFAB002BC5C6 /* WMDataProviderClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 8692A8641D99BFAB002BC5C6 /* WMDataProviderClient.m */; };
+		8692A8761D99C270002BC5C6 /* WMTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8692A8741D99C270002BC5C6 /* WMTableViewCell.m */; };
+		8692A8771D99C270002BC5C6 /* WMTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8692A8741D99C270002BC5C6 /* WMTableViewCell.m */; };
+		8692A8781D99C270002BC5C6 /* WMTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8692A8741D99C270002BC5C6 /* WMTableViewCell.m */; };
+		8692A8791D99C270002BC5C6 /* WMTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8692A8751D99C270002BC5C6 /* WMTableViewCell.xib */; };
+		8692A87A1D99C270002BC5C6 /* WMTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8692A8751D99C270002BC5C6 /* WMTableViewCell.xib */; };
+		8692A87B1D99C270002BC5C6 /* WMTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8692A8751D99C270002BC5C6 /* WMTableViewCell.xib */; };
+		DB41EDF0C84F7B9F422AFD17 /* Pods_WMDailyWeatherTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D99625D16FF4209FDC26E8D /* Pods_WMDailyWeatherTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8692A8221D99AC52002BC5C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8692A8001D99AC52002BC5C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8692A8071D99AC52002BC5C6;
+			remoteInfo = WMDailyWeather;
+		};
+		8692A82D1D99AC52002BC5C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8692A8001D99AC52002BC5C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8692A8071D99AC52002BC5C6;
+			remoteInfo = WMDailyWeather;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D99625D16FF4209FDC26E8D /* Pods_WMDailyWeatherTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WMDailyWeatherTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		13EC557F2E7FDB472BE08E73 /* Pods-WMDailyWeather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WMDailyWeather.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WMDailyWeather/Pods-WMDailyWeather.debug.xcconfig"; sourceTree = "<group>"; };
+		33F165C42E2E042B358B15C5 /* Pods-WMDailyWeatherTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WMDailyWeatherTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WMDailyWeatherTests/Pods-WMDailyWeatherTests.debug.xcconfig"; sourceTree = "<group>"; };
+		79DD3EFE18AE6CF323618EC9 /* Pods-WMDailyWeatherTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WMDailyWeatherTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WMDailyWeatherTests/Pods-WMDailyWeatherTests.release.xcconfig"; sourceTree = "<group>"; };
+		866DEF0B1DB6562B00191663 /* WMDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMDetailViewController.h; sourceTree = "<group>"; };
+		866DEF0C1DB6562B00191663 /* WMDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMDetailViewController.m; sourceTree = "<group>"; };
+		8676F7171D9A956D00CFC43C /* WMDailyModelnfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMDailyModelnfo.h; sourceTree = "<group>"; };
+		8692A8081D99AC52002BC5C6 /* WMDailyWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WMDailyWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8692A80C1D99AC52002BC5C6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8692A80E1D99AC52002BC5C6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8692A80F1D99AC52002BC5C6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8692A8151D99AC52002BC5C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8692A8171D99AC52002BC5C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8692A81A1D99AC52002BC5C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8692A81C1D99AC52002BC5C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8692A8211D99AC52002BC5C6 /* WMDailyWeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WMDailyWeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8692A8251D99AC52002BC5C6 /* WMDailyWeatherTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMDailyWeatherTests.m; sourceTree = "<group>"; };
+		8692A8271D99AC52002BC5C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8692A82C1D99AC52002BC5C6 /* WMDailyWeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WMDailyWeatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8692A8301D99AC52002BC5C6 /* WMDailyWeatherUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMDailyWeatherUITests.m; sourceTree = "<group>"; };
+		8692A8321D99AC52002BC5C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8692A8431D99AD13002BC5C6 /* WMTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMTableViewController.h; sourceTree = "<group>"; };
+		8692A8441D99AD13002BC5C6 /* WMTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMTableViewController.m; sourceTree = "<group>"; };
+		8692A8471D99AEB1002BC5C6 /* WMModelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMModelView.h; sourceTree = "<group>"; };
+		8692A8481D99AEB1002BC5C6 /* WMModelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMModelView.m; sourceTree = "<group>"; };
+		8692A84B1D99AF0C002BC5C6 /* WMDailyModelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMDailyModelView.h; sourceTree = "<group>"; };
+		8692A84C1D99AF0C002BC5C6 /* WMDailyModelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMDailyModelView.m; sourceTree = "<group>"; };
+		8692A84F1D99AF7E002BC5C6 /* WMLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMLocationManager.h; sourceTree = "<group>"; };
+		8692A8501D99AF7E002BC5C6 /* WMLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMLocationManager.m; sourceTree = "<group>"; };
+		8692A8531D99B0B3002BC5C6 /* WMLocationInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMLocationInfo.h; sourceTree = "<group>"; };
+		8692A8541D99B0FD002BC5C6 /* WMLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMLocation.h; sourceTree = "<group>"; };
+		8692A8551D99B0FD002BC5C6 /* WMLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMLocation.m; sourceTree = "<group>"; };
+		8692A8581D99B2D4002BC5C6 /* WMDailyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMDailyModel.h; sourceTree = "<group>"; };
+		8692A8591D99B2D4002BC5C6 /* WMDailyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMDailyModel.m; sourceTree = "<group>"; };
+		8692A85C1D99B365002BC5C6 /* WMTableConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMTableConfiguration.h; sourceTree = "<group>"; };
+		8692A85D1D99B365002BC5C6 /* WMTableConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMTableConfiguration.m; sourceTree = "<group>"; };
+		8692A8601D99B4B1002BC5C6 /* WMModelViewInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMModelViewInfo.h; sourceTree = "<group>"; };
+		8692A8631D99BFAB002BC5C6 /* WMDataProviderClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMDataProviderClient.h; sourceTree = "<group>"; };
+		8692A8641D99BFAB002BC5C6 /* WMDataProviderClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMDataProviderClient.m; sourceTree = "<group>"; };
+		8692A8731D99C270002BC5C6 /* WMTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMTableViewCell.h; sourceTree = "<group>"; };
+		8692A8741D99C270002BC5C6 /* WMTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMTableViewCell.m; sourceTree = "<group>"; };
+		8692A8751D99C270002BC5C6 /* WMTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WMTableViewCell.xib; sourceTree = "<group>"; };
+		BEB42FBB54A41844372131E7 /* Pods-WMDailyWeather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WMDailyWeather.release.xcconfig"; path = "Pods/Target Support Files/Pods-WMDailyWeather/Pods-WMDailyWeather.release.xcconfig"; sourceTree = "<group>"; };
+		FC06F1B2E5B15766AA046EA3 /* Pods_WMDailyWeather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WMDailyWeather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8692A8051D99AC52002BC5C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				411D2D298820BA8D559BF19C /* Pods_WMDailyWeather.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8692A81E1D99AC52002BC5C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB41EDF0C84F7B9F422AFD17 /* Pods_WMDailyWeatherTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8692A8291D99AC52002BC5C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		770F135B9C19E9FB3F6164B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC06F1B2E5B15766AA046EA3 /* Pods_WMDailyWeather.framework */,
+				0D99625D16FF4209FDC26E8D /* Pods_WMDailyWeatherTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8692A7FF1D99AC52002BC5C6 = {
+			isa = PBXGroup;
+			children = (
+				8692A80A1D99AC52002BC5C6 /* WMDailyWeather */,
+				8692A8241D99AC52002BC5C6 /* WMDailyWeatherTests */,
+				8692A82F1D99AC52002BC5C6 /* WMDailyWeatherUITests */,
+				8692A8091D99AC52002BC5C6 /* Products */,
+				9A53D6AE6C186C500C0C5FE5 /* Pods */,
+				770F135B9C19E9FB3F6164B0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8692A8091D99AC52002BC5C6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8692A8081D99AC52002BC5C6 /* WMDailyWeather.app */,
+				8692A8211D99AC52002BC5C6 /* WMDailyWeatherTests.xctest */,
+				8692A82C1D99AC52002BC5C6 /* WMDailyWeatherUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8692A80A1D99AC52002BC5C6 /* WMDailyWeather */ = {
+			isa = PBXGroup;
+			children = (
+				8692A80E1D99AC52002BC5C6 /* AppDelegate.h */,
+				8692A80F1D99AC52002BC5C6 /* AppDelegate.m */,
+				8692A8411D99AC87002BC5C6 /* ViewModels */,
+				8692A8401D99AC81002BC5C6 /* Views */,
+				8692A83F1D99AC6F002BC5C6 /* Models */,
+				8692A83E1D99AC65002BC5C6 /* Common */,
+				8692A8421D99ACB1002BC5C6 /* Resources */,
+				8692A80B1D99AC52002BC5C6 /* Supporting Files */,
+			);
+			path = WMDailyWeather;
+			sourceTree = "<group>";
+		};
+		8692A80B1D99AC52002BC5C6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8692A80C1D99AC52002BC5C6 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8692A8241D99AC52002BC5C6 /* WMDailyWeatherTests */ = {
+			isa = PBXGroup;
+			children = (
+				8692A8251D99AC52002BC5C6 /* WMDailyWeatherTests.m */,
+				8692A8271D99AC52002BC5C6 /* Info.plist */,
+			);
+			path = WMDailyWeatherTests;
+			sourceTree = "<group>";
+		};
+		8692A82F1D99AC52002BC5C6 /* WMDailyWeatherUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8692A8301D99AC52002BC5C6 /* WMDailyWeatherUITests.m */,
+				8692A8321D99AC52002BC5C6 /* Info.plist */,
+			);
+			path = WMDailyWeatherUITests;
+			sourceTree = "<group>";
+		};
+		8692A83E1D99AC65002BC5C6 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				8692A84F1D99AF7E002BC5C6 /* WMLocationManager.h */,
+				8692A8501D99AF7E002BC5C6 /* WMLocationManager.m */,
+				8692A8531D99B0B3002BC5C6 /* WMLocationInfo.h */,
+				8692A85C1D99B365002BC5C6 /* WMTableConfiguration.h */,
+				8692A85D1D99B365002BC5C6 /* WMTableConfiguration.m */,
+				8692A8601D99B4B1002BC5C6 /* WMModelViewInfo.h */,
+				8692A8631D99BFAB002BC5C6 /* WMDataProviderClient.h */,
+				8692A8641D99BFAB002BC5C6 /* WMDataProviderClient.m */,
+				8676F7171D9A956D00CFC43C /* WMDailyModelnfo.h */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		8692A83F1D99AC6F002BC5C6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8692A8541D99B0FD002BC5C6 /* WMLocation.h */,
+				8692A8551D99B0FD002BC5C6 /* WMLocation.m */,
+				8692A8581D99B2D4002BC5C6 /* WMDailyModel.h */,
+				8692A8591D99B2D4002BC5C6 /* WMDailyModel.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		8692A8401D99AC81002BC5C6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8692A8671D99C177002BC5C6 /* Cells */,
+				8692A8431D99AD13002BC5C6 /* WMTableViewController.h */,
+				8692A8441D99AD13002BC5C6 /* WMTableViewController.m */,
+				866DEF0B1DB6562B00191663 /* WMDetailViewController.h */,
+				866DEF0C1DB6562B00191663 /* WMDetailViewController.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		8692A8411D99AC87002BC5C6 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8692A8471D99AEB1002BC5C6 /* WMModelView.h */,
+				8692A8481D99AEB1002BC5C6 /* WMModelView.m */,
+				8692A84B1D99AF0C002BC5C6 /* WMDailyModelView.h */,
+				8692A84C1D99AF0C002BC5C6 /* WMDailyModelView.m */,
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		8692A8421D99ACB1002BC5C6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8692A8141D99AC52002BC5C6 /* Main.storyboard */,
+				8692A8171D99AC52002BC5C6 /* Assets.xcassets */,
+				8692A8191D99AC52002BC5C6 /* LaunchScreen.storyboard */,
+				8692A81C1D99AC52002BC5C6 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		8692A8671D99C177002BC5C6 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8692A8731D99C270002BC5C6 /* WMTableViewCell.h */,
+				8692A8741D99C270002BC5C6 /* WMTableViewCell.m */,
+				8692A8751D99C270002BC5C6 /* WMTableViewCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		9A53D6AE6C186C500C0C5FE5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				13EC557F2E7FDB472BE08E73 /* Pods-WMDailyWeather.debug.xcconfig */,
+				BEB42FBB54A41844372131E7 /* Pods-WMDailyWeather.release.xcconfig */,
+				33F165C42E2E042B358B15C5 /* Pods-WMDailyWeatherTests.debug.xcconfig */,
+				79DD3EFE18AE6CF323618EC9 /* Pods-WMDailyWeatherTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8692A8071D99AC52002BC5C6 /* WMDailyWeather */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8692A8351D99AC52002BC5C6 /* Build configuration list for PBXNativeTarget "WMDailyWeather" */;
+			buildPhases = (
+				614CE3D8109AFC93E26052BD /* [CP] Check Pods Manifest.lock */,
+				8692A8041D99AC52002BC5C6 /* Sources */,
+				8692A8051D99AC52002BC5C6 /* Frameworks */,
+				8692A8061D99AC52002BC5C6 /* Resources */,
+				88F615648324C6F3F2916A3F /* [CP] Embed Pods Frameworks */,
+				6F638F732A18D35F1178245C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WMDailyWeather;
+			productName = WMDailyWeather;
+			productReference = 8692A8081D99AC52002BC5C6 /* WMDailyWeather.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8692A8201D99AC52002BC5C6 /* WMDailyWeatherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8692A8381D99AC52002BC5C6 /* Build configuration list for PBXNativeTarget "WMDailyWeatherTests" */;
+			buildPhases = (
+				BA8DC75AAF4473E61C4D2857 /* [CP] Check Pods Manifest.lock */,
+				8692A81D1D99AC52002BC5C6 /* Sources */,
+				8692A81E1D99AC52002BC5C6 /* Frameworks */,
+				8692A81F1D99AC52002BC5C6 /* Resources */,
+				64B10818C6BD9070273F1889 /* [CP] Embed Pods Frameworks */,
+				F2CF6BDD3EA9D1BE9BFE0496 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8692A8231D99AC52002BC5C6 /* PBXTargetDependency */,
+			);
+			name = WMDailyWeatherTests;
+			productName = WMDailyWeatherTests;
+			productReference = 8692A8211D99AC52002BC5C6 /* WMDailyWeatherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8692A82B1D99AC52002BC5C6 /* WMDailyWeatherUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8692A83B1D99AC52002BC5C6 /* Build configuration list for PBXNativeTarget "WMDailyWeatherUITests" */;
+			buildPhases = (
+				8692A8281D99AC52002BC5C6 /* Sources */,
+				8692A8291D99AC52002BC5C6 /* Frameworks */,
+				8692A82A1D99AC52002BC5C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8692A82E1D99AC52002BC5C6 /* PBXTargetDependency */,
+			);
+			name = WMDailyWeatherUITests;
+			productName = WMDailyWeatherUITests;
+			productReference = 8692A82C1D99AC52002BC5C6 /* WMDailyWeatherUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8692A8001D99AC52002BC5C6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Arafat Hossain";
+				TargetAttributes = {
+					8692A8071D99AC52002BC5C6 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					8692A8201D99AC52002BC5C6 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8692A8071D99AC52002BC5C6;
+					};
+					8692A82B1D99AC52002BC5C6 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8692A8071D99AC52002BC5C6;
+					};
+				};
+			};
+			buildConfigurationList = 8692A8031D99AC52002BC5C6 /* Build configuration list for PBXProject "WMDailyWeather" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8692A7FF1D99AC52002BC5C6;
+			productRefGroup = 8692A8091D99AC52002BC5C6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8692A8071D99AC52002BC5C6 /* WMDailyWeather */,
+				8692A8201D99AC52002BC5C6 /* WMDailyWeatherTests */,
+				8692A82B1D99AC52002BC5C6 /* WMDailyWeatherUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8692A8061D99AC52002BC5C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8692A81B1D99AC52002BC5C6 /* LaunchScreen.storyboard in Resources */,
+				8692A8181D99AC52002BC5C6 /* Assets.xcassets in Resources */,
+				8692A8161D99AC52002BC5C6 /* Main.storyboard in Resources */,
+				8692A8791D99C270002BC5C6 /* WMTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8692A81F1D99AC52002BC5C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8692A87A1D99C270002BC5C6 /* WMTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8692A82A1D99AC52002BC5C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8692A87B1D99C270002BC5C6 /* WMTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		614CE3D8109AFC93E26052BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		64B10818C6BD9070273F1889 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WMDailyWeatherTests/Pods-WMDailyWeatherTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F638F732A18D35F1178245C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WMDailyWeather/Pods-WMDailyWeather-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88F615648324C6F3F2916A3F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WMDailyWeather/Pods-WMDailyWeather-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA8DC75AAF4473E61C4D2857 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F2CF6BDD3EA9D1BE9BFE0496 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WMDailyWeatherTests/Pods-WMDailyWeatherTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8692A8041D99AC52002BC5C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8692A8511D99AF7E002BC5C6 /* WMLocationManager.m in Sources */,
+				8692A85A1D99B2D4002BC5C6 /* WMDailyModel.m in Sources */,
+				8692A8561D99B0FD002BC5C6 /* WMLocation.m in Sources */,
+				8692A84D1D99AF0C002BC5C6 /* WMDailyModelView.m in Sources */,
+				8692A8491D99AEB1002BC5C6 /* WMModelView.m in Sources */,
+				8692A8651D99BFAB002BC5C6 /* WMDataProviderClient.m in Sources */,
+				8692A8101D99AC52002BC5C6 /* AppDelegate.m in Sources */,
+				8692A85E1D99B365002BC5C6 /* WMTableConfiguration.m in Sources */,
+				8692A8761D99C270002BC5C6 /* WMTableViewCell.m in Sources */,
+				866DEF0D1DB6562B00191663 /* WMDetailViewController.m in Sources */,
+				8692A8451D99AD13002BC5C6 /* WMTableViewController.m in Sources */,
+				8692A80D1D99AC52002BC5C6 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8692A81D1D99AC52002BC5C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8692A8571D99B0FD002BC5C6 /* WMLocation.m in Sources */,
+				8692A8521D99AF7E002BC5C6 /* WMLocationManager.m in Sources */,
+				8692A85B1D99B2D4002BC5C6 /* WMDailyModel.m in Sources */,
+				8692A84E1D99AF0C002BC5C6 /* WMDailyModelView.m in Sources */,
+				8692A84A1D99AEB1002BC5C6 /* WMModelView.m in Sources */,
+				866DEF0E1DB6562B00191663 /* WMDetailViewController.m in Sources */,
+				8692A85F1D99B365002BC5C6 /* WMTableConfiguration.m in Sources */,
+				8692A8461D99AD13002BC5C6 /* WMTableViewController.m in Sources */,
+				8692A8661D99BFAB002BC5C6 /* WMDataProviderClient.m in Sources */,
+				8692A8261D99AC52002BC5C6 /* WMDailyWeatherTests.m in Sources */,
+				8692A8771D99C270002BC5C6 /* WMTableViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8692A8281D99AC52002BC5C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				866DEF0F1DB6562B00191663 /* WMDetailViewController.m in Sources */,
+				8692A8311D99AC52002BC5C6 /* WMDailyWeatherUITests.m in Sources */,
+				8692A8781D99C270002BC5C6 /* WMTableViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8692A8231D99AC52002BC5C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8692A8071D99AC52002BC5C6 /* WMDailyWeather */;
+			targetProxy = 8692A8221D99AC52002BC5C6 /* PBXContainerItemProxy */;
+		};
+		8692A82E1D99AC52002BC5C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8692A8071D99AC52002BC5C6 /* WMDailyWeather */;
+			targetProxy = 8692A82D1D99AC52002BC5C6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8692A8141D99AC52002BC5C6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8692A8151D99AC52002BC5C6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8692A8191D99AC52002BC5C6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8692A81A1D99AC52002BC5C6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8692A8331D99AC52002BC5C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8692A8341D99AC52002BC5C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8692A8361D99AC52002BC5C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13EC557F2E7FDB472BE08E73 /* Pods-WMDailyWeather.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WMDailyWeather/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Self-Employed.WMDailyWeather";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8692A8371D99AC52002BC5C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEB42FBB54A41844372131E7 /* Pods-WMDailyWeather.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WMDailyWeather/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Self-Employed.WMDailyWeather";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8692A8391D99AC52002BC5C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33F165C42E2E042B358B15C5 /* Pods-WMDailyWeatherTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WMDailyWeatherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Self-Employed.WMDailyWeatherTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WMDailyWeather.app/WMDailyWeather";
+			};
+			name = Debug;
+		};
+		8692A83A1D99AC52002BC5C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79DD3EFE18AE6CF323618EC9 /* Pods-WMDailyWeatherTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WMDailyWeatherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Self-Employed.WMDailyWeatherTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WMDailyWeather.app/WMDailyWeather";
+			};
+			name = Release;
+		};
+		8692A83C1D99AC52002BC5C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WMDailyWeatherUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Self-Employed.WMDailyWeatherUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WMDailyWeather;
+			};
+			name = Debug;
+		};
+		8692A83D1D99AC52002BC5C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WMDailyWeatherUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Self-Employed.WMDailyWeatherUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WMDailyWeather;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8692A8031D99AC52002BC5C6 /* Build configuration list for PBXProject "WMDailyWeather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8692A8331D99AC52002BC5C6 /* Debug */,
+				8692A8341D99AC52002BC5C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8692A8351D99AC52002BC5C6 /* Build configuration list for PBXNativeTarget "WMDailyWeather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8692A8361D99AC52002BC5C6 /* Debug */,
+				8692A8371D99AC52002BC5C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8692A8381D99AC52002BC5C6 /* Build configuration list for PBXNativeTarget "WMDailyWeatherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8692A8391D99AC52002BC5C6 /* Debug */,
+				8692A83A1D99AC52002BC5C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8692A83B1D99AC52002BC5C6 /* Build configuration list for PBXNativeTarget "WMDailyWeatherUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8692A83C1D99AC52002BC5C6 /* Debug */,
+				8692A83D1D99AC52002BC5C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8692A8001D99AC52002BC5C6 /* Project object */;
+}

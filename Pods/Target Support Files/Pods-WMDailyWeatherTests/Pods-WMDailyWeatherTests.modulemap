@@ -1,0 +1,6 @@
+framework module Pods_WMDailyWeatherTests {
+  umbrella header "Pods-WMDailyWeatherTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
