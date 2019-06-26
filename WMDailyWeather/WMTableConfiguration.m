@@ -13,7 +13,7 @@
 
 
 @interface WMTableConfiguration()
-@property (nonatomic,strong) id<WMModelViewInfo> viewModel;
+@property (nonatomic, weak) id<WMModelViewInfo> viewModel;
 @end
 
 
@@ -25,23 +25,20 @@
     }
     return self;
 }
-
 - (void)updateDataSourceWithModel:(id<WMModelViewInfo>)viewModel {
     self.viewModel = viewModel;
 }
-#pragma mark - UITableViewDataSource
 
+
+#pragma mark - UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-   // return self.viewModel.count;
+    // return self.viewModel.count;
     return self.viewModel.modelCount;
 }
 
-- (WMTableViewCell *)tableView:(UITableView *)tableView
- cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+- (WMTableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     WMTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TableCell"];
-    cell.cellModel = (id<WMDailyModelnfo>)[self.viewModel modelAtIndex:indexPath.row];
-    
-    [cell layoutIfNeeded];
+    [cell setModel: (id<WMDailyModelnfo>)[self.viewModel modelAtIndex:indexPath.row]];
     return cell;
 }
 

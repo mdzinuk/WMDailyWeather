@@ -11,10 +11,11 @@
 #import "WMLocationInfo.h"
 #import "WMModelViewInfo.h"
 
+typedef void (^DidFinishUpdate)(BOOL);
 
 @interface WMModelView : NSObject
 @property (nonatomic, readonly, strong) NSMutableArray<WMModelViewInfo, WMDailyModelnfo>* dailyModelViews;
 - (NSString* )locationName;
 - (NSString* )lastUpdate;
-- (void)updateWithWMLocation:(id<WMLocationInfo>)location;
+- (void)updateWithWMLocation:(id<WMLocationInfo>)location didUpdate:(DidFinishUpdate)didFinish;
 @end

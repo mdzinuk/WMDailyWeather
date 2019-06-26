@@ -11,9 +11,11 @@
 #import "WMModelViewInfo.h"
 
 
+
+
 @interface WMModelView() <WMModelViewInfo>
 @property (nonatomic, readwrite, strong) NSMutableArray<WMModelViewInfo, WMDailyModelnfo>* dailyModelViews;
-@property (nonatomic, strong) id<WMLocationInfo> currentLocation;
+@property (nonatomic, weak) id<WMLocationInfo> currentLocation;
 @end
 
 @implementation WMModelView
@@ -25,13 +27,14 @@
     }
     return self;
 }
-- (void)updateWithWMLocation:(id<WMLocationInfo>)location
+- (void)updateWithWMLocation:(id<WMLocationInfo>)location didUpdate:(DidFinishUpdate)didFinish
 {
     self.currentLocation = location;
     [[WMDataProviderClient sharedWMDataProviderClient] requestWith:location response:^(NSArray<WMModelViewInfo, WMDailyModelnfo>* models) {
        // NSLog(@"-------(%.2f, %.2f)",location.locationCoordinate.latitude,location.locationCoordinate.longitude);
         if (self.dailyModelViews.count) [self.dailyModelViews removeAllObjects];
         [self.dailyModelViews addObjectsFromArray:models];
+        didFinish(YES);
     }];
 }
 

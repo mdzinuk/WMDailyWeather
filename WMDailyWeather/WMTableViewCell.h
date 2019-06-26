@@ -12,5 +12,5 @@
 
 
 @interface WMTableViewCell : UITableViewCell
-@property (nonatomic) id<WMDailyModelnfo> cellModel;
+- (void)setModel:(id<WMDailyModelnfo>)model;
 @end

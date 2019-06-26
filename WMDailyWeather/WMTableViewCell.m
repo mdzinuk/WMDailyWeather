@@ -7,6 +7,8 @@
 //
 
 #import "WMTableViewCell.h"
+#import "UIFont+WeatherFont.h"
+#import "NSString+WeatherFont.h"
 
 @interface WMTableViewCell()
 @property (weak, nonatomic) IBOutlet UILabel *sunriseLbl;
@@ -19,62 +21,57 @@
 @property (weak, nonatomic) IBOutlet UILabel *dewPointLbl;
 @property (weak, nonatomic) IBOutlet UILabel *pressureLbl;
 @property (weak, nonatomic) IBOutlet UILabel *ozoneLbl;
-
+@property (nonatomic, weak) id<WMDailyModelnfo> dataModel;
 @end
-
-/*
- - (NSString* )currentTineInfo;
- - (NSString* )situtationInfo;
- - (NSString* )sunRiseInfo;
- - (NSString* )sunsetInfo;
- 
- @optional
- - (NSString* )precipitatinInfo;
- - (NSString* )cloudyCoverInfo;
- - (NSString* )humidityInfo;
- - (NSString* )dewPointInfo;
- - (NSString* )pressureInfo;
- - (NSString* )ozoneInfo;
- */
 
 @implementation WMTableViewCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
     
-     [self layoutIfNeeded];
+    self.sunriseLbl.font = [UIFont fontWMFontOfSize: 17];
+    self.currentTimeLbl.font = [UIFont fontWMFontOfSize:12];
+    self.sunsetLbl.font = [UIFont fontWMFontOfSize:17];
+    
+    
+    self.precipitationLbl.font = [UIFont fontWMFontOfSize:17];
+    self.cloudyLbl.font = [UIFont fontWMFontOfSize:17];
+    self.humidityLbl.font = [UIFont fontWMFontOfSize:17];
+    
+    
+    self.situationLbl.font = [UIFont fontWMFontOfSize:17];
+    
+    self.dewPointLbl.font = [UIFont fontWMFontOfSize:17];
+    self.pressureLbl.font = [UIFont fontWMFontOfSize:17];
+    self.ozoneLbl.font = [UIFont fontWMFontOfSize:17];
 }
 
+- (void)setModel:(id<WMDailyModelnfo>)model {
+    
+    
+    self.sunriseLbl.text = [NSString stringWithFormat:@"%@ %@", [NSString fontWMIconStringForEnum: wi_sunrise], model.sunRiseInfo];
+    self.currentTimeLbl.text = [NSString stringWithFormat:@"%@ %@", [NSString fontWMIconStringForEnum: wi_time_12], model.currentTineInfo];
+    self.sunsetLbl.text = [NSString stringWithFormat:@"%@ %@", model.sunsetInfo, [NSString fontWMIconStringForEnum: wi_sunset]];
+    
+    self.precipitationLbl.text = [NSString stringWithFormat:@"%@ %@", [NSString fontWMIconStringForEnum: wi_day_showers], model.precipitatinInfo];
+    self.cloudyLbl.text = [NSString stringWithFormat:@"%@ %@", [NSString fontWMIconStringForEnum: wi_night_partly_cloudy], model.cloudyCoverInfo];
+    self.humidityLbl.text = model.humidityInfo;
+    
+    self.situationLbl.text = [NSString stringWithFormat:@"%@ %@", [NSString fontWMIconStringForEnum: wi_wmo4680_24], model.situtationInfo];
+    
+    self.dewPointLbl.text = [NSString stringWithFormat:@"%@ %@", [NSString fontWMIconStringForEnum: wi_wu_snow], model.dewPointInfo];
+    self.pressureLbl.text = [NSString stringWithFormat:@"%@ %@ %@", [NSString fontWMIconStringForEnum: wi_thermometer], model.pressureInfo, [NSString fontWMIconStringForEnum: wi_thermometer]];
+    self.ozoneLbl.text = [NSString stringWithFormat:@"%@ %@", model.ozoneInfo, [NSString fontWMIconStringForEnum: wi_owm_520]];
+}
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
-    //NSLog(@"-------%@",[self.cellModel class]);
-    //id <WMDailyModelnfo>model = (id <WMDailyModelnfo>)self.cellModel;
-    if (self.cellModel && [self.cellModel isModelView]) {
-                
-        self.sunriseLbl.text = self.cellModel.sunRiseInfo;
-        self.currentTimeLbl.text = self.cellModel.currentTineInfo;
-        self.sunsetLbl.text = self.cellModel.sunsetInfo;
-        
-        self.precipitationLbl.text = self.cellModel.precipitatinInfo;
-        self.cloudyLbl.text = self.cellModel.cloudyCoverInfo;
-        self.humidityLbl.text = self.cellModel.humidityInfo;
-        
-        self.situationLbl.text = @"Thiss is arafat hossain and he came from bangladesh please well come to him ";//self.cellModel.situtationInfo;
-        
-        self.dewPointLbl.text = self.cellModel.dewPointInfo;
-        self.pressureLbl.text = self.cellModel.pressureInfo;
-        self.ozoneLbl.text = self.cellModel.ozoneInfo;
-        
+    
+    if (self.dataModel && [self.dataModel isModelView]) {
     }
-    
-    
-    
-   
 }
-
-- (void)layoutSubviews
-{
+/*
+- (void)layoutSubviews {
     [super layoutSubviews];
     
     [self.situationLbl setNeedsLayout];
@@ -83,6 +80,6 @@
 
 -(void)didMoveToSuperview {
     [self layoutIfNeeded];
-}
+}*/
 
 @end

@@ -60,7 +60,7 @@
 
 - (NSString* )currentTineInfo { return self.dailyModel.time; }
 - (NSString* )situtationInfo { return self.dailyModel.summary; }
-- (NSString* )sunRiseInfo { return @"arafat"; }//return self.sunriseTime; }
+- (NSString* )sunRiseInfo { return self.dailyModel.sunriseTime; }
 - (NSString* )sunsetInfo { return self.dailyModel.sunsetTime; }
 
 - (NSString* )precipitatinInfo { return self.dailyModel.precipType; }
